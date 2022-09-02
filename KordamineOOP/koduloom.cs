@@ -16,9 +16,12 @@ namespace KordamineOOP
         public double kaal;
         public int vanus;
         public bool elav; //Kui true, siis elav; kui false siis on surnud
+        public enum sugu1 { hight, low};
+        public sugu1 stealth;
 
         public koduloom() { }
-        public koduloom(string nimi, string varv, sugu loomaSugu, double kaal = 0.0, int vanus = 0, bool elav = false)
+        
+        public koduloom(string nimi, string varv, sugu loomaSugu, sugu1 stealth, double kaal = 0.0, int vanus = 0, bool elav = false)
         {
             this.nimi = nimi;
             this.varv = varv;
@@ -26,6 +29,7 @@ namespace KordamineOOP
             this.kaal = kaal;
             this.vanus = vanus;
             this.elav = elav;
+            this.stealth = stealth;
         }
         public abstract void print_Info();
 

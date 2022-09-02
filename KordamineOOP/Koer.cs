@@ -11,7 +11,7 @@ namespace KordamineOOP
         public enum toug { Mops, Buldog, Pudel, Haski, Jorkširi_terjer };
         public toug toug1;
         //public string toug;//Tõung - порода
-        public Koer(toug toug1, string nimi, string varv, sugu loomaSugu, double kaal, int vanus, bool elav) : base(nimi, varv, loomaSugu, kaal, vanus, elav)
+        public Koer(toug toug1, string nimi, string varv, sugu loomaSugu, sugu1 stealth, double kaal, int vanus, bool elav) : base(nimi, varv, loomaSugu, stealth, kaal, vanus, elav)
         {
             this.toug1 = toug1;
         }
@@ -20,6 +20,7 @@ namespace KordamineOOP
             this.nimi = koer.nimi;
             this.varv = koer.varv;
             this.loomaSugu = koer.loomaSugu;
+            this.stealth = koer.stealth;
             this.kaal = koer.kaal;
             this.vanus = koer.vanus;
             this.elav = koer.elav;

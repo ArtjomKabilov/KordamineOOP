@@ -1,10 +1,10 @@
 ﻿using KordamineOOP;
 using System.IO;
+using static KordamineOOP.Kass;
 using static KordamineOOP.Koer;
 
-Console.WriteLine("Hello, World!");
 
-Koer koer = new Koer(Koer.toug.Haski, "Sarik", "Punane", koduloom.sugu.isane, 35.5, 7, true);
+Koer koer = new Koer(Koer.toug.Haski, "Sarik", "Punane", koduloom.sugu.isane, koduloom.sugu1.hight, 35.5, 7, true);
 koer.print_Info();
 koer.print_Haal();
 //File.WriteAllText(path, createText);
@@ -17,3 +17,28 @@ veelkoer.muudaVanus(5);
 veelkoer.muudaElav(true);
 veelkoer.muudaToug1(Koer.toug.Jorkširi_terjer);
 veelkoer.print_Info();
+
+Console.WriteLine("---------------------------------------------------------------");
+Console.ReadLine();
+Kass kass = new Kass(Kass.toug1.sfinks, "Murka", "Rosa", koduloom.sugu.emane, koduloom.sugu1.hight, 20.4, 5, true);
+kass.print_Info();
+kass.print_Haal();
+try
+{
+    //Pass the filepath and filename to the StreamWriter Constructor
+    StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom.txt");
+    //Write a line of text
+    sw.WriteLine($"{kass.toug2}, {kass.varv}, {kass.nimi} ta on {kass.loomaSugu} ja tema kaal on {kass.kaal} ja ta on {kass.vanus} aastat vana, tema salapära {kass.stealth} ");
+    //Write a second line of text
+    sw.WriteLine($"{koer.toug1}, {koer.varv}, {koer.nimi} ta on {koer.loomaSugu} ja tema kaal on {koer.kaal} ja ta on {koer.vanus} aastat vana");
+    //Close the file
+    sw.Close();
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception: " + e.Message);
+}
+finally
+{
+    Console.WriteLine("Executing finally block.");
+}
