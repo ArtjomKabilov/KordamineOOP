@@ -33,7 +33,7 @@ void koerSave()
     try
     {
         //Pass the filepath and filename to the StreamWriter Constructor
-        StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom.txt");
+        StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\KordamineOOP\\loom.txt");
         //Write a second line of text
         sw.WriteLine($"{koer.toug1},{koer.varv},{koer.nimi},{koer.loomaSugu},{koer.kaal},{koer.vanus}");
         //Close the file
@@ -53,7 +53,7 @@ void kassSave()
     try
     {
         //Pass the filepath and filename to the StreamWriter Constructor
-        StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom2.txt");
+        StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\KordamineOOP\\loom2.txt");
         //Write a line of text
         sw.WriteLine($"{kass.toug2},{kass.varv},{kass.nimi},{kass.loomaSugu},{kass.kaal},{kass.vanus},{kass.stealth} ");
       
@@ -72,7 +72,7 @@ void kassSave()
 }
 Console.WriteLine("---------------------------------------------------------------");
 List<Koer> list = new List<Koer>();
-StreamReader sr = new StreamReader("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom.txt");
+StreamReader sr = new StreamReader("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\KordamineOOP\\loom.txt");
 string text;
 while ((text = sr.ReadLine()) != null)
 {
@@ -88,7 +88,7 @@ foreach (var item in list)
 
 }
 List<Kass> list1 = new List<Kass>();
-StreamReader sr1 = new StreamReader("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom2.txt");
+StreamReader sr1 = new StreamReader("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\KordamineOOP\\loom2.txt");
 string textb;
 while ((textb = sr1.ReadLine()) != null)
 {
@@ -104,7 +104,7 @@ foreach (var item in list1)
     try
     {
         //Pass the filepath and filename to the StreamWriter Constructor
-        StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom3.txt");
+        StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\KordamineOOP\\loom3.txt");
         //Write a line of text
         sw.WriteLine("\n" + item.varv + ", " + item.nimi + ", " + item.loomaSugu);
 

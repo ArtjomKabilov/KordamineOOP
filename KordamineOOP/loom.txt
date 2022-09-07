@@ -1,2 +1,1 @@
-sfinks, Rosa, Murka ta on emane ja tema kaal on 20,4 ja ta on 5 aastat vana, tema salapära hight 
-Haski, Punane, Sarik ta on isane ja tema kaal on 35,5 ja ta on 7 aastat vana
+Jorkširi_terjer,Punane,Bobik,isane,35,5,7
