@@ -26,6 +26,13 @@ namespace KordamineOOP
             this.elav = kass.elav;
             this.toug2 = kass.toug2;
 
+
+        }
+        public Kass(string nimi, string varv, sugu loomaSugu)
+        {
+            this.nimi = nimi;
+            this.varv = varv;
+            this.loomaSugu = loomaSugu;
         }
         public override void print_Haal()
         {

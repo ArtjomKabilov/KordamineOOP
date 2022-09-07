@@ -8,18 +8,12 @@ namespace KordamineOOP
 {
     internal class Koer : koduloom
     {
-        public enum toug { Mops, Buldog, Pudel, Haski, Jorkširi_terjer };
+        public enum toug { Buldog, Mops, Pudel, Haski, Jorkširi_terjer };
         public toug toug1 { get; set; }
         //public string toug;//Tõung - порода
         public Koer(toug toug1, string nimi, string varv, sugu loomaSugu, sugu1 stealth, double kaal, int vanus, bool elav) : base(nimi, varv, loomaSugu, stealth, kaal, vanus, elav)
         {
-            this.nimi = nimi;
-            this.varv = varv;
-            this.loomaSugu = loomaSugu;
-            this.stealth = stealth;
-            this.kaal = kaal;
-            this.vanus = vanus;
-            this.elav = elav;
+           
             this.toug1 = toug1;
         }
         public Koer(Koer koer)//Kloonimiseks
@@ -34,11 +28,12 @@ namespace KordamineOOP
             this.toug1 = koer.toug1;
 
         }
-       public Koer(string nimi, string varv)
+       public Koer(string nimi, string varv, sugu loomaSugu)
        {
             this.nimi = nimi;
             this.varv = varv;
-       }
+            this.loomaSugu = loomaSugu;
+        }
         
 
         public override void print_Haal()

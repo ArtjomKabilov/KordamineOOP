@@ -21,10 +21,11 @@ namespace KordamineOOP
         public sugu1 stealth { get; set; }
 
         public koduloom() { }
-        public koduloom(string nimi, string varv)
+        public koduloom(string nimi, string varv, sugu loomaSugu)
         {
             this.nimi = nimi;
             this.varv = varv;
+            this.loomaSugu = loomaSugu;
         }
 
         public koduloom(string nimi, string varv, sugu loomaSugu, sugu1 stealth, double kaal = 0.0, int vanus = 0, bool elav = false)
