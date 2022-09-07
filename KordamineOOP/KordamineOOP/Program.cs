@@ -35,7 +35,7 @@ void koerSave()
         //Pass the filepath and filename to the StreamWriter Constructor
         StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom.txt");
         //Write a second line of text
-        sw.WriteLine($"{koer.toug1}, {koer.varv}, {koer.nimi}, ta on {koer.loomaSugu}, ja tema kaal on {koer.kaal}, ja ta on {koer.vanus} aastat vana");
+        sw.WriteLine($"{koer.toug1},{koer.varv},{koer.nimi},{koer.loomaSugu},{koer.kaal},{koer.vanus}");
         //Close the file
         sw.Close();
     }
@@ -55,7 +55,7 @@ void kassSave()
         //Pass the filepath and filename to the StreamWriter Constructor
         StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom2.txt");
         //Write a line of text
-        sw.WriteLine($"{kass.toug2}, {kass.varv}, {kass.nimi}, ta on {kass.loomaSugu}, ja tema kaal on {kass.kaal}, ja ta on {kass.vanus},aastat vana, tema salapära {kass.stealth} ");
+        sw.WriteLine($"{kass.toug2},{kass.varv},{kass.nimi},{kass.loomaSugu},{kass.kaal},{kass.vanus},{kass.stealth} ");
       
         //Close the file
         sw.Close();
@@ -106,7 +106,7 @@ koduloom.sugu convertToEnum(string data)
 {
     switch (data)
     {
-        case " ta on isane":
+        case "isane":
             return koduloom.sugu.isane;
         default:
             return koduloom.sugu.emane;

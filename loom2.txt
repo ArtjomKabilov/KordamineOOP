@@ -1,1 +1,1 @@
-sfinks, Rosa, Anton, ta on emane, ja tema kaal on 20,4, ja ta on 5,aastat vana, tema salapära hight 
+sfinks,Rosa,Anton,emane,20,4,5,hight 
