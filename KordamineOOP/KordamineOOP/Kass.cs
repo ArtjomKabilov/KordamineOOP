@@ -9,7 +9,7 @@ namespace KordamineOOP
     internal class Kass: koduloom
     {
         public enum toug1 { Parisa_kass, Meini_kass, Bengali_kass, sfinks, Ragdoll };
-        public toug1 toug2;
+        public toug1 toug2 { get; set; }
         //public string toug;//Tõung - порода
         public Kass(toug1 toug2, string nimi, string varv, sugu loomaSugu, sugu1 stealth, double kaal, int vanus, bool elav) : base(nimi, varv, loomaSugu, stealth, kaal, vanus, elav)
         {
