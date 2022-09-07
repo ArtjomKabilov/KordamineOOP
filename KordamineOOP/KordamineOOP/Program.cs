@@ -85,6 +85,7 @@ foreach (var item in list)
 {
 
     Console.WriteLine("\n" + item.nimi + ", " + item.varv + ", "  + item.loomaSugu);
+
 }
 List<Kass> list1 = new List<Kass>();
 StreamReader sr1 = new StreamReader("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom2.txt");
@@ -100,6 +101,24 @@ foreach (var item in list1)
 {
 
     Console.WriteLine("\n" + item.varv + ", " + item.nimi + ", " + item.loomaSugu);
+    try
+    {
+        //Pass the filepath and filename to the StreamWriter Constructor
+        StreamWriter sw = new StreamWriter("C:\\Users\\opilane.TTHK\\source\\repos\\ArtjomKabilovTARpv20\\loom3.txt");
+        //Write a line of text
+        sw.WriteLine("\n" + item.varv + ", " + item.nimi + ", " + item.loomaSugu);
+
+        //Close the file
+        sw.Close();
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine("Exception: " + e.Message);
+    }
+    finally
+    {
+        Console.WriteLine("Executing finally block.");
+    }
 }
 
 koduloom.sugu convertToEnum(string data)
