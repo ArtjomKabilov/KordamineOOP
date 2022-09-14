@@ -10,6 +10,7 @@ namespace Kontrolltoo_Mang
     {
         public string nimetus { get; set; }
         public int arv { get; set; }
+        
         public Ese(string nimetus, int arv)
         {
             this.nimetus = nimetus;

@@ -11,19 +11,17 @@ namespace Kontrolltoo_Mang
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
-            try
+            Random rnd = new Random();
+            //Эта функция даёт случайное имя
+            string PaneNimi()
             {
-                Peaklass.PlayGame(8);
+                string[] names = { "Artem", "Igor", "Bobr", "Jojo", "Nikitka" };
+                return names[rnd.Next(names.Length)];
             }
-            catch (ArgumentOutOfRangeException)
-            {
-                Console.WriteLine("Пожалуйста заполните файл eseled.txt на рабочем столе и попробуйте снова.");
-            }
-            catch (FileNotFoundException)
-            {
-                Console.WriteLine("Пожалуйста создайте файл eseled.txt на рабочем столе и попробуйте снова.");
-            }
+            
+            Tegelane teg = new Tegelane($"{PaneNimi()}");
+
+            teg.väljastaEsemed();
             Console.ReadLine();
         }
     }
