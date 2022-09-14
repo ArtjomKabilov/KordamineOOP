@@ -18,11 +18,11 @@ namespace Kontrolltoo_Mang
             }
             catch (ArgumentOutOfRangeException)
             {
-                Console.WriteLine("Пожалуйста заполните файл eseled.txt на рабочем столе и попробуйте снова.");
+                Console.WriteLine("Palun täitke tekstifail eseled.txt ja teisendage see oma töölauale");
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine("Пожалуйста создайте файл eseled.txt на рабочем столе и попробуйте снова.");
+                Console.WriteLine("Palun täitke tekstifail eseled.txt ja teisendage see oma töölauale");
             }
             Console.ReadLine();
         }
